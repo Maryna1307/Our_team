@@ -362,6 +362,18 @@ ul {
   font-weight: 900;
   line-height: 1.17;
   color: #666666;
+  position: relative;
+}
+.section .descr__title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background: #FFCC00;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 72px;
 }
 .section .descr__subtitle {
   margin-bottom: 30px;
@@ -380,6 +392,17 @@ ul {
 .section .descr__text {
   margin-bottom: 49px;
   font-weight: 500;
+  position: relative;
+}
+.section .descr__text::after {
+  content: "";
+  display: block;
+  width: 50px;
+  border: 4px dashed #FFCC00;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 139px;
 }
 .section .descr__btn {
   padding: 5px 10px;
